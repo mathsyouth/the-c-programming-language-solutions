@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int c, replaced;
+    int c, replaced;
 
     while((c = getchar()) != EOF) {
         replaced = 0;
