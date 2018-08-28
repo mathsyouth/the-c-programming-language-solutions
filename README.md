@@ -4,7 +4,7 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 ## Table of Contents
 
 * [Chapter 1. A Tutorial Introduction](#chapter-1-a-tutorial-introduction)
-* [Chapter 2. Types, Operators, and Expressions](#chapter-2-types-operators-expressions)
+* [Chapter 2. Types Operators and Expressions](#chapter-2-types-operators-expressions)
 
 ## Chapter 1. A Tutorial Introduction
 
@@ -24,6 +24,6 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 1-23. Write a program to remove all comments from a C program. Don't forget to handle quoted strings and character constants properly. C comments do not nest. [solution](Chapter1/exercise1-23.c)
 * Exercise 1-24. Write a program to check a C program for rudimentary syntax errors like unbalanced parentheses, brackets and braces. Don't forget about quotes, both single and double, escape sequences, and comments. (This program is hard if you do it in full generality.) [solution](Chapter1/exercise1-24.c)
 
-## Chapter 2. Types, Operators, and Expressions
+## Chapter 2. Types Operators and Expressions
 
 * Exercise 2-1. Write a program to determine the ranges of `char`, `short`, `int`, and long variables, both `signed` and `unsigned`, by printing appropriate values from standard hearders and by direct computation. Harder if you compute them: determine the ranges of the various floating-point types. [solution](Chapter2/exercise2-1.c)
