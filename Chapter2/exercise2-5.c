@@ -1,5 +1,5 @@
-// any: returns the first location in the string s1 where any character from string s2 occurs, or -1 if s1 contains no characters from s2
-
+/* any: returns the first location in the string s1 where any character from string s2 occurs, 
+or -1 if s1 contains no characters from s2 */
 int any(char s1[ ], char s2[ ])
 {
     int i, j;
