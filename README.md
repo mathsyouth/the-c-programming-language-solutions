@@ -19,10 +19,10 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 1-18. Write a program to remove trailing blanks and tabs from each line of input, and to delete entriely blank lines. [solution](Chapter1/exercise1-18.c)
 * Exercise 1-19. Write a function `reverse(s)` that reverses the character string `s`. Use it to write a program that reverses its input a line at a time. [solution](Chapter1/exercise1-19.c)
 * Exercise 1-20. Write a program `detab` that replaces tabs in the input with the proper number of blanks to space to the next tab stop. Assume a fixed set of tab stops, say every `n` columns. Should `n` be a variable or symbolic parameter? [solution](Chapter1/exercise1-20.c)
-* Exercise 1-21. Write a program `entab` that replaces strings of blanks by the minimum number of tabs and blanks to achieve the same spacing. Use the same tab stops as for `detab`. When either a tab or a single blank would suffice to reach a tab stop, which should be given preference? [solution](Chapter1/exercise1-21.c)
-* Exercise 1-22. Write a program to "fold" long input lines into two or more shorter lines after the last non-blank character that occurs before the `n`-th column of input. Make sure your program does something intelligent with very long lines, and if there are no blanks or tabs before the specified column. [solution](Chapter1/exercise1-22.c)
-* Exercise 1-23. Write a program to remove all comments from a C program. Don't forget to handle quoted strings and character constants properly. C comments do not nest. [solution](Chapter1/exercise1-23.c)
-* Exercise 1-24. Write a program to check a C program for rudimentary syntax errors like unbalanced parentheses, brackets and braces. Don't forget about quotes, both single and double, escape sequences, and comments. (This program is hard if you do it in full generality.) [solution](Chapter1/exercise1-24.c)
+* Exercise 1-21. Write a program `entab` that replaces strings of blanks by the minimum number of tabs and blanks to achieve the same spacing. Use the same tab stops as for `detab`. When either a tab or a single blank would suffice to reach a tab stop, which should be given preference?
+* Exercise 1-22. Write a program to "fold" long input lines into two or more shorter lines after the last non-blank character that occurs before the `n`-th column of input. Make sure your program does something intelligent with very long lines, and if there are no blanks or tabs before the specified column.
+* Exercise 1-23. Write a program to remove all comments from a C program. Don't forget to handle quoted strings and character constants properly. C comments do not nest.
+* Exercise 1-24. Write a program to check a C program for rudimentary syntax errors like unbalanced parentheses, brackets and braces. Don't forget about quotes, both single and double, escape sequences, and comments. (This program is hard if you do it in full generality.)
 
 ## Chapter 2. Types, Operators, and Expressions
 
@@ -33,5 +33,11 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 2-5. Write the function `any(s1, s1)`, which returns the first location in the string `s1` where any character from the string `s2` occurs, or `-1` if `s1` contains no characters from `s2`. (The standard library function `strpbrk` does the same job but returns a pointer to the location.) [solution](Chapter2/exercise2-5.c)
 * Exercise 2-6. Write a function `setbits(x, p, n, y)` that returns `x` with the `n` bits that begin at position `p` set to the rightmost `n` bits of `y`, leaving the other bits unchanged. [solution](Chapter2/exercise2-6.c)
 * Exercise 2-7. Write a function `invert(x, p, n)` that return `x` with the `n` bits that begin at position `p` inverted (i.e., 1 changed into 0 and vice versa), leaving the others unchanged. [solution](Chapter2/exercise2-7.c)
-* Exercise 2-8. Write a function `rightrot(x, n)` that returns the value of the integer `x` rotated to the right by `n` bit positions. [solution](Chapter2/exercise2-8.c)
+* Exercise 2-8. Write a function `rightrot(x, n)` that returns the value of the integer `x` rotated to the right by `n` bit positions.
+* Exercise 2-9. In a two's complement number system, `x &= (x - 1)` deletes the rightmost 1-bit in `x`. Explain why. Use this observation to write a faster version of `bitcount`. [solution](Chapter2/exercise2-9.c)
+* Exercise 2-10. Rewrite the function `lower`, which converts the upper case letters to lower case, with a conditional expression instead of `if-else`. [solution](Chapter2/exercise2-10.c)
+
+
+## Chapter 3. Control Flow
+Exercise 3-1. Our binary search makes two tests inside the loop, when one would suffice (at the price of more tests outside). Write a version with only one test inside the loop and measure the difference in run-time. [solution](Chapter3/exercise3-1.c)
 
