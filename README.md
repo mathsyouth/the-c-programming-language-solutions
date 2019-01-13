@@ -6,6 +6,7 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * [Chapter 1. A Tutorial Introduction](#chapter-1-a-tutorial-introduction)
 * [Chapter 2. Types, Operators, and Expressions](#chapter-2-types-operators-and-expressions)
 * [Chapter 3. Control Flow](#chapter-3-control-flow)
+* [Chapter 4. Functions and Program Structure](#chapter-4-functions-and-program-structure)
 
 ## Chapter 1. A Tutorial Introduction
 
@@ -46,4 +47,16 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 3-4. In a two's complement number representation, our version of `itoa` does not handle the largest negative number, that is, the value of `n` equal to `-(2^{wordsize-1})`. Explain why not. Modify it to print that value correctly, regardless of the machine on which it runs. [solution](Chapter3/exercise3-4.c)
 * Exercise 3-5. Write the function `itob(n, s, b)` that converts the integer `n` into a base `b` character representation in the string `s`. In particalar, `itob(n, s, 16)` formats `n` as a hexadecimal integer in `s`. [solution](Chapter3/exercise3-5.c)
 * Exercise 3-6. Write a version of `itoa` that accepts three arguments instead of two. The third argument is a minimum field width; the converted number must be padded with blanks on the left if necessary to make it wide enough. [solution](Chapter3/exercise3-6.c)
+
+## Chapter 4. Functions and Program Structure
+* Exercise 4-1. Write the function `strrindex(s, t)`, which returns the position of the **rightmost** occurrence of `t` in `s`, or `-1` if there is none. [solution](Chapter4/exercise4-1.c)
+* Exercise 4-2. Extend `atof` to handle scientific notation of the form `123.45e-6` where a floating-point number may be followed by `e` or `E` and an optionally signed exponent. [solution](Chapter4/exercise4-2.c)
+* Exercise 4-3. Given the basic framework, it's straightforward to extend the calculator. Add the modulus (`%`) and provisions for negative numbers. [solution](Chapter4/exercise4-3.c)
+* Exercise 4-4. Add commands to print the top element of the stack without poping, to duplicate it, and to swap the top two elements. Add a command to clear the stack. [solution](Chapter4/exercise4-4.c)
+* Exercise 4-5. Add access to library functions like `sin`, `exp` and `pow`. See `<math.h>` in Appendix B, Section 4. [solution](Chapter4/exercise4-5.c)
+* Exercise 4-6. Add commands for handling variables. (It's easy to provide twenty-six variables with single-letter names.) Add a variable for the most recently printed value.
+* Exercise 4-7. Write a routine `ungets` that will push back an entire string onto the input. Should `ungets` know about `buf` and `bufp`, or should it just use `ungetch`?
+* Exercise 4-8. Supppose that there will never be more than one character of pushback. Modify `getch` and `ungetch` accordingly.
+* Exercise 4-9. Our `getch` and `ungetch` do not handle a pushed-back `EOF` correctly. Decide what their properties ougth to be if an `EOF` is pushed back, then implement your design.
+* Exercise 4-10. An alternative organization uses `getline` to read an entire input line; this makes `getch` and `ungetch` unnecessary. Revise the calculator to use this appproach.
 
