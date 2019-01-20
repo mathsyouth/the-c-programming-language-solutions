@@ -59,4 +59,8 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 4-8. Supppose that there will never be more than one character of pushback. Modify `getch` and `ungetch` accordingly.
 * Exercise 4-9. Our `getch` and `ungetch` do not handle a pushed-back `EOF` correctly. Decide what their properties ougth to be if an `EOF` is pushed back, then implement your design.
 * Exercise 4-10. An alternative organization uses `getline` to read an entire input line; this makes `getch` and `ungetch` unnecessary. Revise the calculator to use this appproach.
+* Exercise 4-11. Modify `getop` so that it doesn't need to use `ungetch`. Hint: use an internal `static` variable. [solution](Chapter4/exercise4-11.c)
+* Exercise 4-12. Adapt the ideas of `printd` to write a recursive version of `itoa`; that is, convert an integer into a string by calling a recursive routine. [solution](Chapter4/exercise4-12.c)
+* Exercise 4-13. Write a recursive version of the function `reverse(s)`, which reverse the string `s` in place. [solution](Chapter4/exercise4-13.c)
+# Exercise 4-14. Define a macro `swap(t, x, y)` that interchanges two arguments of type `t`. (Block structure will help.) [solution](Chapter4/exercise4-14.c)
 
