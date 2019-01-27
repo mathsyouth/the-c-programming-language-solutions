@@ -80,4 +80,7 @@ Provide high quality solutions to the exercises in "The C Programming Language" 
 * Exercise 5-4. Write the function `strend(s, t)`, which returns 1 if the string `t` occurs at the end of the string `s`, and zero otherwise.
 * Exercise 5-5. Write the version of the library functions `strncpy`, `strncat`, and `strncmp`, which operate on at most the first `n` characters of their arguement strings. For example, `strncpy(s, t, n)` copies at most `n` characters of `t` to `s`. Full descriptions are in Appendix B.
 * Exercise 5-6. Rewrite appropriate programs from earlier chapters and exercises with ponters instead of array indexing. Good possibilites include `getline` (Chapter 1 and 4), `atoi`, `itoa`, and their variants (Chapter 2, 3, and 4), `reverse` (Chapter 3), and `strindex` and `getop` (Chapter 4).
+* Exercise 5-7. Rewrite `readlines` to store lines in an array supplied by `main`, rather than calling `alloc` to maintain storage. How much faster is the program? [solution](Chapter5/exercise5-7.c)
+* Exercise 5-8. There is no error checking in `day_of_year` or `month_day`. Remedy this defect. [solution](Chapter5/exercise5-8.c)
+* Exercise 5-9. Rewrite the routines `day_of_year` and `month_day` with pointers instead of indexing. [solution](Chapter5/exercise5-9.c)
 
