@@ -13,7 +13,6 @@ void in_braces(char string[]);
  
 int main(void)
 {
-  extern int double_quotes, single_quotes;
   char string[SIZE];
   int c;
   int i = 0;
